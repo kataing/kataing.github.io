@@ -30,9 +30,9 @@
     "nodemon": "^1.19.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "webpack": "^4.39.2"
-  },
-  "devDependencies": {
+    "react-social-icons": "^4.1.0",
+    "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7"
-  }
+  },
+  "devDependencies": {}
 }
