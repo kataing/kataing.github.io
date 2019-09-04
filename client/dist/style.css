@@ -1,23 +1,22 @@
 body {
   font-family: 'Source Code Pro', monospace;
-  /* background: #252929; */
-  /* background-color: #e0ffff; */
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 iframe {
   width: 700px;
   height: 400px;
-  /* border: 1px solid #f0f0f0; */
 }
-
-/* img {
-  border: 1px solid #f0f0f0;
-} */
 
 a {
-  color: black;
   text-decoration: none;
 }
+
+/*
+  -------------------
+  Main Page
+  -------------------
+*/
 
 .main {
   display: block;
@@ -25,8 +24,16 @@ a {
   background-color: #e0ffff;
 }
 
+/*
+  -------------------
+  Menu Page
+  -------------------
+*/
+
 .menu {
   display: flex;
+  position: fixed;
+  top: 0;
   width: 100vw;
   justify-content: space-between;
   border-bottom: 1px solid rgb(127,127,127);
@@ -36,11 +43,13 @@ a {
 .menu-item-container {
   display: inline-flex;
   align-items: center;
+  margin-left: 10px;
 }
 
 .menu-item {
   display: inline-block;
-  margin: 10px;
+  margin: 10px 20px; 
+  color: black;
 }
 
 .menu-item:hover {
@@ -49,6 +58,7 @@ a {
 
 .social-icon-container {
   display: inline-flex;
+  margin-right: 20px;
 }
 
 .social-icon {
@@ -56,24 +66,44 @@ a {
   margin: 5px;
 }
 
-.section-header {
-  display: block;
-  width: 90vw;
-  margin: 30px 0;
-  font-family: 'Sacramento', cursive;
-  font-size: 50px;
-  /* color: #fff; */
-}
+/*
+  --------------------------------------------
+  Sections: About Me, Highlights, Applications
+  --------------------------------------------
+*/
 
 .section {
   display: flex;
   padding: 25px;
+  padding-top: 65px;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.section-inner-container {
+.section-header-container {
+  display: flex;
+  width: 90vw;
+  margin: 30px 0;
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.section-header {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.section-separator {
+  display: inline-block;
+  height: 2px;
+  background-color: #252929;
+  flex: 1;
+}
+
+.section-container-large {
   display: flex;
   width: 82vw;
   flex-direction: column;
@@ -82,7 +112,16 @@ a {
   margin: 10px;
   border: 1px solid #888;
   background-color: #adc4cb;
-  /* background-color: #e0ffff; */
+}
+
+.section-container-small {
+  display: flex;
+  width: 82vw;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  background: #252929;
+  padding: 15px;
 }
 
 .section-subtitle {
@@ -90,19 +129,6 @@ a {
   font-size: 20px;
   padding: 15px;
   color: #fff;
-}
-
-.highlights-container {
-  display: flex;
-  width: 82vw;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  /* background-color: #e0ffff; */
-  /* background-color: #fff; */
-  color: #fff;
-  background: #252929;
-  padding: 15px;
 }
 
 .section-description-short {
@@ -117,4 +143,79 @@ a {
   padding: 15px;
   color: #fff;
   background: #252929;
+}
+
+.skills-text {
+  display: block;
+  padding: 5px 0;
+}
+
+/*
+  ----------------------
+  About Me Software Logos
+  ----------------------
+*/
+
+.skills-logo-container {
+  display: block;
+}
+
+.skills-logo {
+  display: inline-block;
+  margin: 10px 0;
+  padding-right: 15px;
+  width: 30px;
+  height: 30px;
+}
+
+/*
+  -------------------
+  füdFeed Logo
+  -------------------
+*/
+
+.app-logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.app-logo {
+  display: inline-block;
+  width: 160px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin: 25px;
+}
+
+/*
+  -------------------
+  Backcountry Link
+  -------------------
+*/
+
+.backcountry-text:hover {
+  text-decoration: underline;
+}
+
+/*
+  -------------------
+  Repo Link
+  -------------------
+*/
+
+.repo-link {
+  display: block;
+  width: 110px;
+  border: 1px solid #999;
+  border-radius: 25px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 5px 0; 
+  color: #fff;
+}
+
+.repo-link:hover {
+  text-decoration: underline;
+  color: #000;
+  background-color: #999;
 }
