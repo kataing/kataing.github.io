@@ -1,5 +1,11 @@
 import React from 'react';
 
+import { IoLogoJavascript } from 'react-icons/io';
+import { IoLogoCss3 } from 'react-icons/io';
+import { IoLogoHtml5 } from 'react-icons/io';
+import { FaReact } from 'react-icons/fa';
+import { IoLogoGithub } from 'react-icons/io';
+
 class AboutMe extends React.Component {
   constructor(props) {
     super(props);
@@ -8,22 +14,32 @@ class AboutMe extends React.Component {
   render() {
     return (
       <section id='about-me' className='section'>
-        <h1 className='section-header'>About Me</h1>
-        <section className='section-inner-container'>
-          <div className='highlights-container'>
+        <h1 className='section-header-container'>
+          <span className='section-separator'></span>
+          <div className='section-header'>
+            About Me
+          </div>
+          <span className='section-separator'></span>
+        </h1>
+        <section className='section-container-large'>
+          <div className='section-container-small'>
             <div className='section-description-short'>
-              <div>
+              <h1 className='section-subtitle'>
                 Kristina Taing
-              </div>
+              </h1>
               <div>
                 Software Engineer
               </div>
+              <div className='skills-logo-container'>
+                <IoLogoJavascript className='skills-logo' />
+                <IoLogoHtml5 className='skills-logo' />
+                <IoLogoCss3 className='skills-logo' />
+                <FaReact className='skills-logo' />
+                <IoLogoGithub className='skills-logo' />
+              </div>
             </div>
             <div>
-              <div className='section-subtitle'>
-                Some Sort of Heading
-              </div>
-              <iframe src="https://www.youtube.com/embed/7k3XS0FrShE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/7k3XS0FrShE" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
           </div>
         </section>
