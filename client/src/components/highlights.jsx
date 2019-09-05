@@ -99,6 +99,26 @@ class Highlights extends React.Component {
               Mock-teryx System Design
             </h1>
           </div>
+          <div className='diagram'>
+            <span>
+              <h3 className='diagram-header'>
+                Step 1: Inherit a legacy design with 100 sample data records
+              </h3>
+              <img className='diagram-item' width="350" height="150" src='./sdc_legacy.png' />
+            </span>
+            <span>
+              <h3 className='diagram-header'>
+                Step 2: Design and test a SQL & NoSQL database design locally
+              </h3>
+              <img className='diagram-item' width="350" height="300" src='./sdc_local.png' />
+            </span>
+            <span>
+              <h3 className='diagram-header'>
+                Step 3: Scale preferred database design and deploy to EC2 instances
+              </h3>
+              <img className='diagram-item' width="650" height="370" src='./sdc_design.png' />
+            </span>
+          </div>
           <div className='section-description-long'>
             <p className='description-container'>
               <a className='repo-link' href='https://github.com/caffeine-dependency/component-kristina'>
