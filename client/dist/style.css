@@ -127,7 +127,7 @@ a {
 .section-subtitle {
   display: block;
   font-size: 20px;
-  padding: 15px;
+  padding: 5px 10px 10px 10px;
   color: #fff;
 }
 
@@ -140,14 +140,24 @@ a {
 .section-description-long {
   display: inline-block;
   width: 100%;
-  padding: 15px;
+  padding: 0 15px 15px 15px;
   color: #fff;
   background: #252929;
 }
 
-.skills-text {
+.description-container {
   display: block;
-  padding: 5px 0;
+  padding: 0 15px;
+}
+
+.description-new-line {
+  display: block;
+  padding-top: 10px;
+}
+
+.bullet-point-container {
+  display: block;
+  padding: 10px 0 0 20px;
 }
 
 /*
@@ -174,17 +184,12 @@ a {
   -------------------
 */
 
-.app-logo-container {
-  display: flex;
-  justify-content: center;
-}
-
 .app-logo {
   display: inline-block;
-  width: 160px;
+  width: 80px;
   border-radius: 50%;
   border: 3px solid #fff;
-  margin: 25px;
+  margin: 5px 20px;
 }
 
 /*

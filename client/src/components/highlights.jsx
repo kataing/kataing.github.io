@@ -23,18 +23,27 @@ class Highlights extends React.Component {
               <h1 className='section-subtitle'>
                 füdFeed: A Mobile Recipe App
               </h1>
-              <div className='app-logo-container'>
-                <img className='app-logo' src='./fudFeedLogo.png' />
-              </div>
-              <p>
-                <span className='skills-text'>
-                  <a className='repo-link' href='https://github.com/kataing/ingredient-sourcing-app'>
-                    View Repo
-                </a>
+              <img className='app-logo' src='./fudFeedLogo.png' />
+              <p className='description-container'>
+                <a className='repo-link' href='https://github.com/kataing/ingredient-sourcing-app'>
+                  View Repo
+                  </a>
+                <span className='description-new-line'>
                   | React Native | Express | MongoDB | GoogleMapsAPI |
                 </span>
-                <span>
-                  this is a description
+                <span className='description-new-line'>
+                  A monolithic, mobile app to inspire users with home-made recipes and the ability to search for stores by ingredient
+                </span>
+                <span className='bullet-point-container'>
+                  <span className='description-new-line'>
+                    • Integrated Google Maps SDK API to display each store location and associated user rating
+                  </span>
+                  <span className='description-new-line'>
+                    • Designed map component to display search results or local stores if no search is made
+                  </span>
+                  <span className='description-new-line'>
+                    • Designed feed to conditionally expand recipe details and user comments separately
+                  </span>
                 </span>
               </p>
             </div>
@@ -60,18 +69,28 @@ class Highlights extends React.Component {
             </div>
           </div>
           <div className='section-description-long'>
-            <div>
-              <div className='skills-text'>
-                <a className='repo-link' href='https://github.com/feat-backendcountry/component-kristina'>
-                  View Repo
-                </a>
+            <p className='description-container'>
+              <a className='repo-link' href='https://github.com/feat-backendcountry/component-kristina'>
+                View Repo
+              </a>
+              <span className='description-new-line'>
                 | React | Express | AWS S3 | MongoDB | HTML5 | CSS3 |
-              </div>
-              Developed a front-end replica of the Backcountry website, specializing in the navigation-bar micro service
-              •	Replicated the navigation-bar design and functionality, and hosted images and icons on AWS S3
-              •	Designed a MongoDB schema and seeded 100 sample product entries
-              •	Developed a query to return results from the database related to values typed into the search bar
-              </div>
+              </span>
+              <span className='description-new-line'>
+                Developed a front-end replica of the Backcountry website using a Service Oriented Architecture
+              </span>
+              <span className='bullet-point-container'>
+                <span className='description-new-line'>
+                  • Specialized in the navigation-bar design and functionality, and hosted images and icons on AWS S3
+                  </span>
+                <span className='description-new-line'>
+                  • Designed a MongoDB schema and seeded 100 sample product entries
+                  </span>
+                <span className='description-new-line'>
+                  • Developed a request to return results from the database related to values typed into the search bar
+                  </span>
+              </span>
+            </p>
           </div>
         </section>
         <section className='section-container-large'>
@@ -81,18 +100,28 @@ class Highlights extends React.Component {
             </h1>
           </div>
           <div className='section-description-long'>
-            <div>
-              <div className='skills-text'>
-                <a className='repo-link' href='https://github.com/caffeine-dependency/component-kristina'>
-                  View Repo
-                </a>
+            <p className='description-container'>
+              <a className='repo-link' href='https://github.com/caffeine-dependency/component-kristina'>
+                View Repo
+              </a>
+              <span className='description-new-line'>
                 | Express | MongoDB | PostgreSQL | AWS EC2 | Artillery.io | Loader.io | Nginx |
-              </div>
-              Built, stress-tested, and optimized the back-end architecture for an existing front-end design: an Arc’teryx replica
-              •	Constructed a SQL and NoSQL system design to seed 10M entries in 10min and query an entry in 6ms
-              •	Optimized local system to 350 RPS with 2.8ms latency by creating indexes for both database designs
-              •	Achieved 2.5k RPS, 75ms latency, and 0% error rate with round robin load balancing & 4 EC2 instances
-              </div>
+              </span>
+              <span className='description-new-line'>
+                Built, stress-tested, and optimized the back-end architecture for an existing front-end design: an Arc’teryx replica
+              </span>
+              <span className='bullet-point-container'>
+                <span className='description-new-line'>
+                  • Constructed a SQL and NoSQL system design to seed 10M entries in 10min and query an entry in 6ms
+                  </span>
+                <span className='description-new-line'>
+                  • Optimized local system to 350 RPS with 2.8ms latency by creating btree indices for both databases
+                  </span>
+                <span className='description-new-line'>
+                  • Achieved 2.5k RPS, 75ms latency, and 0% error rate with round robin load balancing & 4 EC2 instances
+                  </span>
+              </span>
+            </p>
           </div>
         </section>
       </section>
