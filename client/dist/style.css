@@ -204,6 +204,32 @@ a {
 
 /*
   -------------------
+  Diagrams
+  -------------------
+*/
+
+.diagram {
+  display: flex;
+  width: 82vw;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  background: #ececec;
+  padding: 15px;
+}
+
+.diagram-item {
+  display: inline-block;
+}
+
+.diagram-header {
+  display: block;
+  padding-bottom: 10px;
+}
+
+/*
+  -------------------
   Repo Link
   -------------------
 */
@@ -215,12 +241,12 @@ a {
   border-radius: 25px;
   text-align: center;
   padding: 5px 0;
-  margin: 5px 0; 
+  margin: 15px 0; 
   color: #fff;
 }
 
 .repo-link:hover {
   text-decoration: underline;
   color: #000;
-  background-color: #999;
+  background-color: #adc4cb;
 }
