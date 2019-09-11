@@ -98,24 +98,24 @@ class Highlights extends React.Component {
               Mock-teryx System Design
             </h1>
           </div>
-          <div className='diagram'>
-            <span>
+          <div className='diagram-container'>
+            <span className='diagram-item'>
               <h3 className='diagram-header'>
                 Step 1: Inherit a legacy design with 100 sample data records
               </h3>
-              <img className='diagram-item diagram1' src='./sdc_legacy.png' alt='System Design Diagram 1' />
+              <img className='diagram-img-1' src='./sdc_legacy.png' alt='System Design Diagram 1' />
             </span>
-            <span>
+            <span className='diagram-item'>
               <h3 className='diagram-header'>
                 Step 2: Design and test a SQL & NoSQL database locally
               </h3>
-              <img className='diagram-item diagram2' src='./sdc_local.png' alt='System Design Diagram 2' />
+              <img className='diagram-img-2' src='./sdc_local.png' alt='System Design Diagram 2' />
             </span>
-            <span>
+            <span className='diagram-item'>
               <h3 className='diagram-header'>
                 Step 3: Deploy preferred database design and scale with an Nginx load balancer and additional EC2 instances
               </h3>
-              <img className='diagram-item diagram3' src='./sdc_design.png' alt='System Design Diagram 3' />
+              <img className='diagram-img-3' src='./sdc_design.png' alt='System Design Diagram 3' />
             </span>
           </div>
           <div className='section-description-long'>
