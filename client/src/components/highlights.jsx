@@ -1,5 +1,4 @@
 import React from 'react';
-import { SocialIcon } from 'react-social-icons';
 
 class Highlights extends React.Component {
   constructor(props) {
@@ -23,7 +22,7 @@ class Highlights extends React.Component {
               <h1 className='section-subtitle'>
                 füdFeed: A Mobile Recipe App
               </h1>
-              <img className='app-logo' src='./fudFeedLogo.png' />
+              <img className='app-logo' src='./fudFeedLogo.png' alt='fudFeed logo'/>
               <p className='description-container'>
                 <a className='repo-link' href='https://github.com/kataing/ingredient-sourcing-app'>
                   View Repo
@@ -39,10 +38,10 @@ class Highlights extends React.Component {
                     • Integrated Google Maps SDK API to display each store location and associated user rating
                   </span>
                   <span className='description-new-line'>
-                    • Designed map component to display search results or local stores if no search is made
+                    • Designed map component to conditionally display default search results using componentDidUpdate
                   </span>
                   <span className='description-new-line'>
-                    • Designed feed to conditionally expand recipe details and user comments separately
+                    • Designed feed to conditionally expand recipe details and user comments
                   </span>
                 </span>
               </p>
@@ -59,7 +58,7 @@ class Highlights extends React.Component {
               <div className='section-subtitle backcountry-text'>
                 Backcountry Website
               </div>
-              <img width="650" height="400" src='./Backcountry.png' />
+              <img className='backcountry-img' src='./Backcountry.png' alt='Backcountry Website' />
             </a>
             <div>
               <div className='section-subtitle'>
@@ -84,7 +83,7 @@ class Highlights extends React.Component {
                   • Specialized in the navigation-bar design and functionality, and hosted images and icons on AWS S3
                   </span>
                 <span className='description-new-line'>
-                  • Designed a MongoDB schema and seeded 100 sample product entries
+                  • Designed a MongoDB schema with additional nested schemas and seeded 100 sample product entries
                   </span>
                 <span className='description-new-line'>
                   • Developed a request to return results from the database related to values typed into the search bar
@@ -104,19 +103,19 @@ class Highlights extends React.Component {
               <h3 className='diagram-header'>
                 Step 1: Inherit a legacy design with 100 sample data records
               </h3>
-              <img className='diagram-item' width="350" height="150" src='./sdc_legacy.png' />
+              <img className='diagram-item diagram1' src='./sdc_legacy.png' alt='System Design Diagram 1' />
             </span>
             <span>
               <h3 className='diagram-header'>
-                Step 2: Design and test a SQL & NoSQL database design locally
+                Step 2: Design and test a SQL & NoSQL database locally
               </h3>
-              <img className='diagram-item' width="350" height="300" src='./sdc_local.png' />
+              <img className='diagram-item diagram2' src='./sdc_local.png' alt='System Design Diagram 2' />
             </span>
             <span>
               <h3 className='diagram-header'>
-                Step 3: Scale preferred database design and deploy to EC2 instances
+                Step 3: Deploy preferred database design and scale with an Nginx load balancer and additional EC2 instances
               </h3>
-              <img className='diagram-item' width="650" height="370" src='./sdc_design.png' />
+              <img className='diagram-item diagram3' src='./sdc_design.png' alt='System Design Diagram 3' />
             </span>
           </div>
           <div className='section-description-long'>
@@ -133,13 +132,16 @@ class Highlights extends React.Component {
               <span className='bullet-point-container'>
                 <span className='description-new-line'>
                   • Constructed a SQL and NoSQL system design to seed 10M entries in 10min and query an entry in 6ms
-                  </span>
+                </span>
                 <span className='description-new-line'>
-                  • Optimized local system to 350 RPS with 2.8ms latency by creating btree indices for both databases
-                  </span>
+                  • Optimized query times by 25s in the SQL system and 30s in the NoSQL system by using btree indices
+                </span>
                 <span className='description-new-line'>
-                  • Achieved 2.5k RPS, 75ms latency, and 0% error rate with round robin load balancing & 4 EC2 instances
-                  </span>
+                  • Designed a local system that reached 350 RPS with 2.8ms latency, & 0% error rate
+                </span>
+                <span className='description-new-line'>
+                  • Deployed 4 EC2 instances with 2.5k RPS, 75ms latency, & 0% error rate with round robin load balancing
+                </span>
               </span>
             </p>
           </div>

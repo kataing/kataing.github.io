@@ -1,0 +1,264 @@
+@media (min-width: 600px) {
+  body {
+    background-color: aqua;
+  }
+  
+  body {
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+  iframe {
+    width: 700px;
+    height: 400px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /*
+    -------------------
+    Menu Page
+    -------------------
+  */
+  
+  .menu {
+    /* display: flex; */
+    /* position: fixed; */
+    /* top: 0; */
+    /* width: 100vw; */
+    justify-content: space-between;
+    /* border-bottom: 1px solid rgb(127,127,127); */
+    /* background-color: #e0ffff; */
+  }
+  
+  .menu-item-container {
+    /* display: inline-flex; */
+    /* align-items: center; */
+    /* margin-left: 10px; */
+  }
+  
+  .menu-mobile {
+    display: none;
+  }
+
+  .menu-item {
+    display: inline-block;
+    margin: 10px 20px; 
+    color: black;
+  }
+  
+  .menu-item:hover {
+    /* text-decoration: underline; */
+  }
+  
+  .social-icon-container {
+    /* display: inline-flex; */
+    /* margin-right: 20px; */
+  }
+  
+  .social-icon {
+    /* display: inline-block; */
+    /* margin: 5px; */
+  }
+  
+  /*
+    --------------------------------------------
+    Sections: About Me, Highlights, Applications
+    --------------------------------------------
+  */
+  
+  .section {
+    /* display: flex; */
+    /* padding: 25px; */
+    /* padding-top: 65px; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+  }
+  
+  .section-header-container {
+    /* display: flex; */
+    /* width: 90vw; */
+    /* margin: 30px 0; */
+    /* font-family: 'Sacramento', cursive; */
+    /* font-size: 50px; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+  }
+  
+  .section-header {
+    /* display: inline-block; */
+    /* padding: 0 15px; */
+  }
+  
+  .section-separator {
+    /* display: inline-block; */
+    /* height: 2px; */
+    /* background-color: #252929; */
+    /* flex: 1; */
+  }
+  
+  .section-container-large {
+    /* display: flex; */
+    /* width: 82vw; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* padding: 15px; */
+    /* margin: 10px; */
+    /* border: 1px solid #888; */
+    /* background-color: #adc4cb; */
+  }
+  
+  .section-container-small {
+    /* display: flex; */
+    /* width: 82vw; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* color: #fff; */
+    /* background: #252929; */
+    /* padding: 15px; */
+  }
+  
+  .section-subtitle {
+    /* display: block; */
+    /* font-size: 20px; */
+    /* padding: 5px 10px 10px 10px; */
+    /* color: #fff; */
+  }
+  
+  .section-description-short {
+    /* display: inline-block; */
+    /* width: 40vw; */
+    /* padding: 15px; */
+  }
+  
+  .section-description-long {
+    /* display: inline-block; */
+    /* width: 100%; */
+    /* padding: 0 15px 15px 15px; */
+    /* color: #fff; */
+    /* background: #252929; */
+  }
+  
+  .description-container {
+    /* display: block; */
+    /* padding: 0 15px; */
+  }
+  
+  .description-new-line {
+    /* display: block; */
+    /* padding-top: 10px; */
+  }
+  
+  .bullet-point-container {
+    /* display: block; */
+    /* padding: 10px 0 0 20px; */
+  }
+  
+  /*
+    ----------------------
+    About Me Software Logos
+    ----------------------
+  */
+  
+  .skills-logo-container {
+    /* display: block; */
+  }
+  
+  .skills-logo {
+    /* display: inline-block; */
+    /* margin: 10px 0; */
+    /* padding-right: 15px; */
+    /* width: 30px; */
+    /* height: 30px; */
+  }
+  
+  /*
+    -------------------
+    füdFeed Logo
+    -------------------
+  */
+  
+  .app-logo {
+    /* display: inline-block; */
+    /* width: 80px; */
+    /* border-radius: 50%; */
+    /* border: 3px solid #fff; */
+    /* margin: 5px 20px; */
+  }
+  
+  /*
+    -------------------
+    Backcountry Link
+    -------------------
+  */
+  
+  .backcountry-text:hover {
+    /* text-decoration: underline; */
+  }
+  
+  /*
+    -------------------
+    Diagrams
+    -------------------
+  */
+  
+  .diagram {
+    /* display: flex; */
+    /* width: 82vw; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* color: #000; */
+    /* background: #ececec; */
+    /* padding: 15px; */
+  }
+  
+  .diagram-item {
+    /* display: inline-block; */
+  }
+  
+  .diagram1 {
+    /* width: 350px; */
+    /* height: 150px; */
+  }
+  
+  .diagram2 {
+    /* width: 350px; */
+    /* height: 300px; */
+  }
+  
+  .diagram3 {
+    /* width: 650px; */
+    /* height: 370px; */
+  }
+  
+  .diagram-header {
+    /* display: block; */
+    /* padding-bottom: 10px; */
+  }
+  
+  /*
+    -------------------
+    Repo Link
+    -------------------
+  */
+  
+  .repo-link {
+    /* display: block; */
+    /* width: 110px; */
+    /* border: 1px solid #999; */
+    /* border-radius: 25px; */
+    /* text-align: center; */
+    /* padding: 5px 0; */
+    /* margin: 15px 0;  */
+    /* color: #fff; */
+  }
+  
+  .repo-link:hover {
+    /* text-decoration: underline; */
+    /* color: #000; */
+    /* background-color: #adc4cb; */
+  }
+}
