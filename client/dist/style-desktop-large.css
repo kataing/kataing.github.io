@@ -1,0 +1,92 @@
+@media (min-width: 1300px) {
+  
+  /*
+    --------------------------------------------
+    Sections: About Me, Highlights, Applications
+    --------------------------------------------
+  */
+  
+  .column-to-row-container {
+    flex-direction: row;
+  }
+  
+  .repo-link {
+    align-self: auto;
+  }
+
+  .skills {
+    align-self: auto;
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+
+  .description-item {
+    flex: 1;
+  }
+
+  .description-visual {
+    flex: 1.15;
+  }
+
+   /*
+    -------------------
+    füdFeed Specific
+    -------------------
+  */
+
+  .app-logo {
+    align-self: auto;
+  }
+
+
+  /*
+    -------------------
+    Backcountry Specific
+    -------------------
+  */
+
+  .backcountry-item {
+    padding: 10px;
+  }
+  
+  /*
+    -------------------
+    Arcteryx Specific
+    -------------------
+  */
+  
+  .diagram-item {
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid #777;
+    background-color: #fff;
+  }
+
+  .diagram-item-1 {
+    flex: 1;
+  }
+
+  .diagram-item-2 {
+    flex: 1;
+  }
+
+  .diagram-item-3 {
+    flex: 1.75;
+  }
+
+  .diagram-header {
+    padding-left: 0;
+  }
+
+  .diagram-img-1 {
+    align-self: auto;
+  }
+  
+  .diagram-img-2 {
+    align-self: auto;
+  }
+  
+  .diagram-img-3 {
+    align-self: auto;
+  }
+}
