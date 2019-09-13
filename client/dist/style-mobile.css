@@ -2,12 +2,20 @@ body {
   font-family: 'Source Code Pro', monospace;
 }
 
-iframe {
-  width: 700px;
-  max-width: 100%;
-  height: 30vh;
-  max-height: 400px;
-  padding-bottom: 15px;
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 a {
@@ -21,7 +29,6 @@ a {
 */
 
 .main {
-  /* display: block; */
   height: 100vh;
   width: 100vw;
 }
@@ -40,6 +47,12 @@ a {
   justify-content: space-between;
   border-bottom: 1px solid rgb(127,127,127);
   background-color: #e0ffff;
+  z-index: 1;
+}
+
+.menu-bar-mobile {
+  height: 35px;
+  width: 35px;
 }
 
 .menu-item-container {
@@ -48,30 +61,33 @@ a {
   margin-left: 10px;
 }
 
-.menu-mobile {
-  /* display: inline-block; */
-  height: 35px;
-  width: 35px;
+.menu-item-container-mobile {
+  display: float;
+  position: absolute;
+  margin-top: 60px;
+  width: 50%;
+  align-items: center;
+  background-color: #252929;
+  border: solid #adc4cb 1px;
 }
 
 .menu-item {
   display: none;
-  /* display: inline-block; */
-  /* margin: 10px 20px;  */
-  /* color: black; */
 }
 
-.menu-item:hover {
-  /* text-decoration: underline; */
+.menu-item-mobile {
+  display: block;
+  font-size: 20px;
+  padding: 20px; 
+  color: #fff;
+  border-bottom: solid #adc4cb 1px;
 }
 
-.social-icon-container {
-  /* display: inline-flex; */
-  /* margin-right: 20px; */
+.menu-item-mobile:hover {
+  text-decoration: underline;
 }
 
 .social-icon {
-  /* display: inline-block; */
   margin: 5px;
 }
 /*
@@ -100,12 +116,10 @@ a {
 }
 
 .section-header {
-  /* display: inline-block; */
   padding: 0 15px;
 }
 
 .section-separator {
-  /* display: inline-block; */
   height: 2px;
   background-color: #252929;
   flex: 1;
@@ -123,40 +137,28 @@ a {
 }
 
 .section-container-small {
-  /* display: block; */
-  /* display: flex; */
   width: 82vw;
-  /* flex-direction: row; */
-  /* justify-content: space-between; */
   color: #fff;
   background: #252929;
   padding: 0px 15px;
 }
 
 .section-subtitle {
-  /* display: block; */
+  display: block;
   font-size: 20px;
   padding: 10px 0px;
   color: #fff;
 }
 
 .section-description-short {
-  /* display: inline-block; */
-  /* width: 40vw; */
   padding: 15px 0px;
 }
 
 .section-description-long {
-  /* display: inline-block; */
   width: 100%;
   padding: 0 15px 15px 15px;
   color: #fff;
   background: #252929;
-}
-
-.description-container {
-  /* display: block; */
-  /* padding: 0 15px; */
 }
 
 .description-new-line {
@@ -167,6 +169,23 @@ a {
 .bullet-point-container {
   display: block;
   padding: 10px 0 0 20px;
+}
+
+.repo-link {
+  display: block;
+  width: 110px;
+  border: 1px solid #999;
+  border-radius: 25px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 15px 0; 
+  color: #fff;
+}
+
+.repo-link:hover {
+  text-decoration: underline;
+  color: #000;
+  background-color: #adc4cb;
 }
 
 /*
@@ -212,8 +231,8 @@ a {
 }
 
 .backcountry-img {
-  width: 650px;
-  height: 400px;
+  width: 700px;
+  max-width: 100%;
 }
 
 /*
@@ -222,61 +241,38 @@ a {
   -------------------
 */
 
-.diagram {
-  /* display: flex; */
+.diagram-container {
   width: 82vw;
-  /* flex-direction: row; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
   color: #000;
   background: #ececec;
   padding: 15px;
 }
 
 .diagram-item {
+  display: flex;
+  flex-direction: column;
   padding: 5px 0;
-  /* display: inline-block; */
 }
 
-.diagram1 {
+.diagram-img-1 {
+  align-self: center;
   width: 350px;
-  height: 150px;
+  max-width: 100%;
 }
 
-.diagram2 {
+.diagram-img-2 {
+  align-self: center;
   width: 350px;
-  height: 300px;
+  max-width: 100%;
 }
 
-.diagram3 {
-  width: 650px;
-  height: 370px;
+.diagram-img-3 {
+  align-self: center;
+  width: 600px;
+  max-width: 100%;
 }
 
 .diagram-header {
   display: block;
   padding-bottom: 10px;
-}
-
-/*
-  -------------------
-  Repo Link
-  -------------------
-*/
-
-.repo-link {
-  display: block;
-  width: 110px;
-  border: 1px solid #999;
-  border-radius: 25px;
-  text-align: center;
-  padding: 5px 0;
-  margin: 15px 0; 
-  color: #fff;
-}
-
-.repo-link:hover {
-  text-decoration: underline;
-  color: #000;
-  background-color: #adc4cb;
 }

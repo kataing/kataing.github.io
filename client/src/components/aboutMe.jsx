@@ -23,23 +23,25 @@ class AboutMe extends React.Component {
         </h1>
         <section className='section-container-large'>
           <div className='section-container-small'>
-            <div className='section-description-short'>
-              <h1 className='section-subtitle'>
-                Kristina Taing
-              </h1>
-              <div>
-                Software Engineer
+            <h1 className='section-subtitle'>
+              Kristina Taing
+            </h1>
+            <div className='column-to-row-container'>
+              <div className='section-description-short description-item'>
+                <div>
+                  Software Engineer
+                </div>
+                <div className='skills-logo-container'>
+                  <IoLogoJavascript className='skills-logo' />
+                  <IoLogoHtml5 className='skills-logo' />
+                  <IoLogoCss3 className='skills-logo' />
+                  <FaReact className='skills-logo' />
+                  <IoLogoGithub className='skills-logo' />
+                </div>
               </div>
-              <div className='skills-logo-container'>
-                <IoLogoJavascript className='skills-logo' />
-                <IoLogoHtml5 className='skills-logo' />
-                <IoLogoCss3 className='skills-logo' />
-                <FaReact className='skills-logo' />
-                <IoLogoGithub className='skills-logo' />
+              <div className='iframe-container description-visual'>
+                <iframe src="https://www.youtube.com/embed/7k3XS0FrShE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
-            </div>
-            <div>
-              <iframe src="https://www.youtube.com/embed/7k3XS0FrShE" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
           </div>
         </section>
