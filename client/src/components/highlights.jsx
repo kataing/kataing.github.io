@@ -18,53 +18,59 @@ class Highlights extends React.Component {
         {/* füdFeed Application */}
         <section className='section-container-large'>
           <div className='section-container-small'>
-            <div className='section-description-short'>
-              <h1 className='section-subtitle'>
-                füdFeed: A Mobile Recipe App
-              </h1>
-              <img className='app-logo' src='./fudFeedLogo.png' alt='fudFeed logo'/>
-              <p className='description-container'>
-                <a className='repo-link' href='https://github.com/kataing/ingredient-sourcing-app'>
-                  View Repo
-                  </a>
-                <span className='description-new-line'>
-                  | React Native | Express | MongoDB | GoogleMapsAPI |
-                </span>
-                <span className='description-new-line'>
-                  A monolithic, mobile app to inspire users with home-made recipes and the ability to search for stores by ingredient
-                </span>
-                <span className='bullet-point-container'>
-                  <span className='description-new-line'>
-                    • Integrated Google Maps SDK API to display each store location and associated user rating
+            <h1 className='section-subtitle'>
+              füdFeed: A Mobile Recipe App
+            </h1>
+            <div className='column-to-row-container'>
+              <div className='section-description-short description-item'>
+                <img className='app-logo' src='./fudFeedLogo.png' alt='fudFeed logo'/>
+                <p className='description-container'>
+                  <a className='repo-link' href='https://github.com/kataing/ingredient-sourcing-app'>
+                    View Repo
+                    </a>
+                  <span className='description-new-line skills'>
+                    | React Native | Express | MongoDB | GoogleMapsAPI |
                   </span>
                   <span className='description-new-line'>
-                    • Designed map component to conditionally display default search results using componentDidUpdate
+                    A monolithic, mobile app to inspire users with home-made recipes and the ability to search for stores by ingredient
                   </span>
-                  <span className='description-new-line'>
-                    • Designed feed to conditionally expand recipe details and user comments
+                  <span className='bullet-point-container'>
+                    <span className='description-new-line'>
+                      • Integrated Google Maps SDK API to display each store location and associated user rating
+                    </span>
+                    <span className='description-new-line'>
+                      • Designed map component to conditionally display default search results using componentDidUpdate
+                    </span>
+                    <span className='description-new-line'>
+                      • Designed feed to conditionally expand recipe details and user comments
+                    </span>
                   </span>
-                </span>
-              </p>
-            </div>
-            <div>
-              <iframe src="https://www.youtube.com/embed/jM6ts8k4Al4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </p>
+              </div>
+              <div className='iframe-container description-visual'>
+                <iframe src="https://www.youtube.com/embed/jM6ts8k4Al4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+              </div>
             </div>
           </div>
         </section>
         {/* Front-End Country Application */}
         <section className='section-container-large'>
           <div className='section-container-small'>
-            <a href='https://www.backcountry.com/fjallraven-vidda-pro-pant-mens?skid=FJR00EP-DAROV-USS37EUS54&ti=UExQIENhdDpNZW4ncyBQYW50czoxOjU6YmMtbWVucy1wYW50cw=='>
-              <div className='section-subtitle backcountry-text'>
-                Backcountry Website
+            <div className='column-to-row-container'>
+              <a className='backcountry-item description-visual' href='https://www.backcountry.com/fjallraven-vidda-pro-pant-mens?skid=FJR00EP-DAROV-USS37EUS54&ti=UExQIENhdDpNZW4ncyBQYW50czoxOjU6YmMtbWVucy1wYW50cw=='>
+                <div className='section-subtitle backcountry-text'>
+                  Backcountry Website
+                </div>
+                <img className='backcountry-img' src='./Backcountry.png' alt='Backcountry Website' />
+              </a>
+              <div className='backcountry-item description-visual'>
+                <div className='section-subtitle'>
+                  Front-End Country: A Backcountry.com Replica
+                </div>
+                <div className='iframe-container'>
+                  <iframe src="https://www.youtube.com/embed/VBUTHrku_d4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
               </div>
-              <img className='backcountry-img' src='./Backcountry.png' alt='Backcountry Website' />
-            </a>
-            <div>
-              <div className='section-subtitle'>
-                Front-End Country: A Backcountry.com Replica
-              </div>
-              <iframe src="https://www.youtube.com/embed/VBUTHrku_d4" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
           </div>
           <div className='section-description-long'>
@@ -72,7 +78,7 @@ class Highlights extends React.Component {
               <a className='repo-link' href='https://github.com/feat-backendcountry/component-kristina'>
                 View Repo
               </a>
-              <span className='description-new-line'>
+              <span className='description-new-line  skills'>
                 | React | Express | AWS S3 | MongoDB | HTML5 | CSS3 |
               </span>
               <span className='description-new-line'>
@@ -98,20 +104,20 @@ class Highlights extends React.Component {
               Mock-teryx System Design
             </h1>
           </div>
-          <div className='diagram-container'>
-            <span className='diagram-item'>
+          <div className='diagram-container column-to-row-container'>
+            <span className='diagram-item diagram-item-1'>
               <h3 className='diagram-header'>
                 Step 1: Inherit a legacy design with 100 sample data records
               </h3>
               <img className='diagram-img-1' src='./sdc_legacy.png' alt='System Design Diagram 1' />
             </span>
-            <span className='diagram-item'>
+            <span className='diagram-item diagram-item-2'>
               <h3 className='diagram-header'>
                 Step 2: Design and test a SQL & NoSQL database locally
               </h3>
               <img className='diagram-img-2' src='./sdc_local.png' alt='System Design Diagram 2' />
             </span>
-            <span className='diagram-item'>
+            <span className='diagram-item diagram-item-3'>
               <h3 className='diagram-header'>
                 Step 3: Deploy preferred database design and scale with an Nginx load balancer and additional EC2 instances
               </h3>
@@ -123,8 +129,8 @@ class Highlights extends React.Component {
               <a className='repo-link' href='https://github.com/caffeine-dependency/component-kristina'>
                 View Repo
               </a>
-              <span className='description-new-line'>
-                | Express | MongoDB | PostgreSQL | AWS EC2 | Artillery.io | Loader.io | Nginx |
+              <span className='description-new-line  skills'>
+                | Express | MongoDB | PostgreSQL | AWS EC2 | Loader.io | Nginx |
               </span>
               <span className='description-new-line'>
                 Built, stress-tested, and optimized the back-end architecture for an existing front-end design: an Arc’teryx replica
