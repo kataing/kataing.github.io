@@ -29,8 +29,47 @@ a {
 */
 
 .main {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 55px;
+  height: 95vh;
   width: 100vw;
+  background-color: #252929;
+  color: #fff;
+  border-bottom: solid 3px #adc4cb;
+}
+
+.typewriter-container {
+  display: inline-block;
+  margin: auto;
+  padding: 25px;
+  align-self: center;
+}
+
+.intro-text {
+  font-size: 50px;
+}
+
+.typewriter {
+  font-size: 50px;
+  border-right: .08em solid #e0ffff; 
+  animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #e0ffff; }
+}
+
+.down-arrow-container {
+  display: float;
+  position: absolute;
+  margin-top: 70vh;
+  align-self: center;
+}
+
+.down-arrow {
+  height: 110px;
 }
 
  /*
@@ -190,7 +229,7 @@ a {
 
 /*
   ----------------------
-  About Me Software Logos
+  About Me Specific
   ----------------------
 */
 
@@ -231,6 +270,7 @@ a {
 }
 
 .backcountry-img {
+  align-self: auto;
   width: 700px;
   max-width: 100%;
 }
