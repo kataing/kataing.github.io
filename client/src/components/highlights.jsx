@@ -53,51 +53,7 @@ class Highlights extends React.Component {
             </div>
           </div>
         </section>
-        {/* Front-End Country Application */}
-        <section className='section-container-large'>
-          <div className='section-container-small'>
-            <div className='column-to-row-container'>
-              <a className='backcountry-item description-visual' href='https://www.backcountry.com/fjallraven-vidda-pro-pant-mens?skid=FJR00EP-DAROV-USS37EUS54&ti=UExQIENhdDpNZW4ncyBQYW50czoxOjU6YmMtbWVucy1wYW50cw=='>
-                <div className='section-subtitle backcountry-text'>
-                  Backcountry Website
-                </div>
-                <img className='backcountry-img' src='./Backcountry.png' alt='Backcountry Website' />
-              </a>
-              <div className='backcountry-item description-visual'>
-                <div className='section-subtitle'>
-                  Front-End Country: A Backcountry.com Replica
-                </div>
-                <div className='iframe-container'>
-                  <iframe src="https://www.youtube.com/embed/VBUTHrku_d4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className='section-description-long'>
-            <p className='description-container'>
-              <a className='repo-link' href='https://github.com/feat-backendcountry/component-kristina'>
-                View Repo
-              </a>
-              <span className='description-new-line  skills'>
-                | React | Express | AWS S3 | MongoDB | HTML5 | CSS3 |
-              </span>
-              <span className='description-new-line'>
-                Developed a front-end replica of the Backcountry website using a Service Oriented Architecture
-              </span>
-              <span className='bullet-point-container'>
-                <span className='description-new-line'>
-                  • Specialized in the navigation-bar design and functionality, and hosted images and icons on AWS S3
-                  </span>
-                <span className='description-new-line'>
-                  • Designed a MongoDB schema with additional nested schemas and seeded 100 sample product entries
-                  </span>
-                <span className='description-new-line'>
-                  • Developed a request to return results from the database related to values typed into the search bar
-                  </span>
-              </span>
-            </p>
-          </div>
-        </section>
+        {/* Mock-teryx Application */}
         <section className='section-container-large'>
           <div className='section-container-small'>
             <h1 className='section-subtitle'>
@@ -148,6 +104,51 @@ class Highlights extends React.Component {
                 <span className='description-new-line'>
                   • Deployed 4 EC2 instances with 2.5k RPS, 75ms latency, & 0% error rate with round robin load balancing
                 </span>
+              </span>
+            </p>
+          </div>
+        </section>
+        {/* Front-End Country Application */}
+        <section className='section-container-large'>
+          <div className='section-container-small'>
+            <div className='column-to-row-container'>
+              <div className='backcountry-item'>
+                <div className='section-subtitle'>
+                  Front-End Country: A Backcountry.com Replica
+                </div>
+                <div className='iframe-container description-visual backcountry-video'>
+                  <iframe src="https://www.youtube.com/embed/VBUTHrku_d4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
+              </div>
+              <a className='backcountry-item description-item' href='https://www.backcountry.com/fjallraven-vidda-pro-pant-mens?skid=FJR00EP-DAROV-USS37EUS54&ti=UExQIENhdDpNZW4ncyBQYW50czoxOjU6YmMtbWVucy1wYW50cw=='>
+                <div className='section-subtitle backcountry-text'>
+                  Backcountry Website
+                </div>
+                <img className='backcountry-img' src='./Backcountry.png' alt='Backcountry Website' />
+              </a>
+            </div>
+          </div>
+          <div className='section-description-long'>
+            <p className='description-container'>
+              <a className='repo-link' href='https://github.com/feat-backendcountry/component-kristina'>
+                View Repo
+              </a>
+              <span className='description-new-line  skills'>
+                | React | Express | AWS S3 | MongoDB | HTML5 | CSS3 |
+              </span>
+              <span className='description-new-line'>
+                Developed a front-end replica of the Backcountry website using a Service Oriented Architecture
+              </span>
+              <span className='bullet-point-container'>
+                <span className='description-new-line'>
+                  • Specialized in the navigation-bar design and functionality, and hosted images and icons on AWS S3
+                  </span>
+                <span className='description-new-line'>
+                  • Designed a MongoDB schema with additional nested schemas and seeded 100 sample product entries
+                  </span>
+                <span className='description-new-line'>
+                  • Developed a request to return results from the database related to values typed into the search bar
+                  </span>
               </span>
             </p>
           </div>
