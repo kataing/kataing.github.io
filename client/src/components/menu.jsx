@@ -29,9 +29,28 @@ class Menu extends React.Component {
       )
     }
   }
+
+  handleScroll = () => {
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById('menu').style.top = '0';
+      } else {
+        document.getElementById('menu').style.top = '-61px';
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  }
+  
+  componentDidMount() {
+    this.handleScroll();
+  }
+
+
   render() {
     return (
-      <section className='menu'>
+      <section id='menu' className='menu'>
         <div className='menu-item-container'>
           <FaBars className='menu-bar-mobile' onClick={this.handleOnClick} />
           <a href='#main' className='menu-item'>Home</a>

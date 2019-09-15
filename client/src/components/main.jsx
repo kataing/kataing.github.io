@@ -5,19 +5,19 @@ class Main extends React.Component {
     super(props);
     this.state = {
       fullText: "Welcome to Kristina Taing's Portfolio!",
-      displayLength: 0  // Max length is 38
+      displayLength: 0
     }
+    this.addLetter = this.addLetter.bind(this);
   }
 
   addLetter() {
-    if (this.state.displayLength < 38) {
-      this.setState({
-        displayLength: this.state.displayLength + 1
-      }, () => {
-        console.log(this.state.displayLength);
-        setInterval(this.addLetter(), 1000);
-      })
-    }
+    this.setState({
+      displayLength: this.state.displayLength + 1
+    }, () => {
+      if (this.state.displayLength < this.state.fullText.length) {
+        setTimeout(this.addLetter, 200);
+      }
+    })
   }
 
   componentDidMount() {
@@ -35,7 +35,7 @@ class Main extends React.Component {
           <span className='typewriter'></span>
         </div>
         <a href='#about-me' className='down-arrow-container'>
-          <img className='down-arrow' src='down-arrow.png' alt='down-arrow'/>
+          <img className='down-arrow' src='down-arrow.png' alt='down-arrow' />
         </a>
       </div>
     )
