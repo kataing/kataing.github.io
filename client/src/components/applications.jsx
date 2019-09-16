@@ -8,13 +8,14 @@ class Applications extends React.Component {
   render() {
     return (
       <section id='applications' className='section'>
-         <h1 className='section-header-container'>
-        <span className='section-separator'></span>
+        <h1 className='section-header-container'>
+          <span className='section-separator'></span>
           <div className='section-header'>
             Applications
           </div>
           <span className='section-separator'></span>
         </h1>
+        
       </section>
     )
   }
