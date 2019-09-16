@@ -1,5 +1,19 @@
 @media (min-width: 1300px) {
-  
+
+  /*
+    -------------------
+    Main Page
+    -------------------
+  */
+
+  .main-container {
+    width: 60vw;
+  }
+
+  .image-container {
+    width: 40vw;
+  }
+
   /*
     --------------------------------------------
     Sections: About Me, Highlights, Applications

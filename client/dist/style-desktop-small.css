@@ -33,6 +33,51 @@
   }
 
   /*
+    -------------------
+    Main Page
+    -------------------
+  */
+
+  .main {
+    flex-direction: row;
+  }
+
+  .main-container {
+    width: 50vw;
+  }
+
+  .image-container {
+    width: 50vw;
+    margin: 0;
+  }
+  
+  .portfolio-image {
+    height: 102vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 0%;
+    border: none;
+  }
+
+  .typewriter-container {
+    width: 30vw;
+  }
+
+  .intro-text {
+    font-size: 50px;
+    line-height: 1.5;
+  }
+
+  .down-arrow-container {
+    margin-top: 80vh;
+  }
+
+  .down-arrow {
+    height: 110px;
+  }
+
+  /*
     --------------------------------------------
     Sections: About Me, Highlights, Applications
     --------------------------------------------

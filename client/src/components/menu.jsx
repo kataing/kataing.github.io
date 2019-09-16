@@ -11,7 +11,7 @@ class Menu extends React.Component {
     }
   }
 
-  handleOnClick = (e) => {
+  handleMobileMenuOnClick = (e) => {
     this.setState({
       displayMobileMenu: !this.state.displayMobileMenu
     })
@@ -21,10 +21,10 @@ class Menu extends React.Component {
     if (this.state.displayMobileMenu) {
       return (
         <div className='menu-item-container-mobile'>
-          <a href='#main' className='menu-item-mobile' onClick={this.handleOnClick} >Home</a>
-          <a href='#about-me' className='menu-item-mobile' onClick={this.handleOnClick} >About Me</a>
-          <a href='#highlights' className='menu-item-mobile' onClick={this.handleOnClick} >Highlights</a>
-          <a href='#applications' className='menu-item-mobile' onClick={this.handleOnClick} >Applications</a>
+          <a href='#main' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >Home</a>
+          <a href='#about-me' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >About Me</a>
+          <a href='#highlights' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >Highlights</a>
+          <a href='#applications' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >Applications</a>
         </div>
       )
     }
@@ -32,7 +32,7 @@ class Menu extends React.Component {
 
   handleScroll = () => {
     var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
+    window.onscroll = () => {
       var currentScrollPos = window.pageYOffset;
       if (prevScrollpos > currentScrollPos) {
         document.getElementById('menu').style.top = '0';
@@ -52,7 +52,7 @@ class Menu extends React.Component {
     return (
       <section id='menu' className='menu'>
         <div className='menu-item-container'>
-          <FaBars className='menu-bar-mobile' onClick={this.handleOnClick} />
+          <FaBars className='menu-bar-mobile' onClick={this.handleMobileMenuOnClick} />
           <a href='#main' className='menu-item'>Home</a>
           <a href='#about-me' className='menu-item'>About Me</a>
           <a href='#highlights' className='menu-item'>Highlights</a>

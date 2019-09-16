@@ -15,7 +15,7 @@ class Main extends React.Component {
       displayLength: this.state.displayLength + 1
     }, () => {
       if (this.state.displayLength < this.state.fullText.length) {
-        setTimeout(this.addLetter, 200);
+        setTimeout(this.addLetter, 120);
       }
     })
   }
@@ -26,18 +26,22 @@ class Main extends React.Component {
 
   render() {
     return (
-      <div id='main' className='main'>
-        <div></div>
-        <div className='typewriter-container'>
-          <span className='intro-text'>
-            {this.state.fullText.slice(0, this.state.displayLength)}
-          </span>
-          <span className='typewriter'></span>
+      <section id='main' className='main'>
+        <div className='image-container'>
+          <img className='portfolio-image' src='portfolio-image.jpg' alt='portfolio-image' />
         </div>
-        <a href='#about-me' className='down-arrow-container'>
-          <img className='down-arrow' src='down-arrow.png' alt='down-arrow' />
-        </a>
-      </div>
+        <div className='main-container'>
+          <div className='typewriter-container'>
+            <span className='intro-text'>
+              {this.state.fullText.slice(0, this.state.displayLength)}
+            </span>
+            <span className='typewriter'></span>
+          </div>
+          <a href='#about-me' className='down-arrow-container'>
+            <img className='down-arrow' src='down-arrow.png' alt='down-arrow' />
+          </a>
+        </div>
+      </section>
     )
   }
 }
