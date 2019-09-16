@@ -13,8 +13,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Main />
         <Menu />
+        <Main />
         <AboutMe />
         <Highlights />
         <Applications />
