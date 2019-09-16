@@ -23,7 +23,7 @@ class Highlights extends React.Component {
             </h1>
             <div className='column-to-row-container'>
               <div className='section-description-short description-item'>
-                <img className='app-logo' src='./fudFeedLogo.png' alt='fudFeed logo'/>
+                <img className='app-logo' src='images/fudFeedLogo.png' alt='fudFeed logo'/>
                 <p className='description-container'>
                   <a className='repo-link' href='https://github.com/kataing/ingredient-sourcing-app'>
                     View Repo
@@ -65,19 +65,19 @@ class Highlights extends React.Component {
               <h3 className='diagram-header'>
                 Step 1: Inherit a legacy design with 100 sample data records
               </h3>
-              <img className='diagram-img-1' src='./sdc_legacy.png' alt='System Design Diagram 1' />
+              <img className='diagram-img-1' src='images/sdc_legacy.png' alt='System Design Diagram 1' />
             </span>
             <span className='diagram-item diagram-item-2'>
               <h3 className='diagram-header'>
                 Step 2: Design and test a SQL & NoSQL database locally
               </h3>
-              <img className='diagram-img-2' src='./sdc_local.png' alt='System Design Diagram 2' />
+              <img className='diagram-img-2' src='images/sdc_local.png' alt='System Design Diagram 2' />
             </span>
             <span className='diagram-item diagram-item-3'>
               <h3 className='diagram-header'>
                 Step 3: Deploy preferred database design and scale with an Nginx load balancer and additional EC2 instances
               </h3>
-              <img className='diagram-img-3' src='./sdc_design.png' alt='System Design Diagram 3' />
+              <img className='diagram-img-3' src='images/sdc_design.png' alt='System Design Diagram 3' />
             </span>
           </div>
           <div className='section-description-long'>
@@ -124,7 +124,7 @@ class Highlights extends React.Component {
                 <div className='section-subtitle backcountry-text'>
                   Backcountry Website
                 </div>
-                <img className='backcountry-img' src='./Backcountry.png' alt='Backcountry Website' />
+                <img className='backcountry-img' src='images/Backcountry.png' alt='Backcountry Website' />
               </a>
             </div>
           </div>

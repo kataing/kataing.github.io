@@ -28,7 +28,7 @@ class Main extends React.Component {
     return (
       <section id='main' className='main'>
         <div className='image-container'>
-          <img className='portfolio-image' src='portfolio-image.jpg' alt='portfolio-image' />
+          <img className='portfolio-image' src='images/portfolio-image.jpg' alt='portfolio-image' />
         </div>
         <div className='main-container'>
           <div className='typewriter-container'>
@@ -38,7 +38,7 @@ class Main extends React.Component {
             <span className='typewriter'></span>
           </div>
           <a href='#about-me' className='down-arrow-container'>
-            <img className='down-arrow' src='down-arrow.png' alt='down-arrow' />
+            <img className='down-arrow' src='images/down-arrow.png' alt='down-arrow' />
           </a>
         </div>
       </section>
