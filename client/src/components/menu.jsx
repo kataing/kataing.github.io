@@ -23,8 +23,8 @@ class Menu extends React.Component {
         <div className='menu-item-container-mobile'>
           <a href='#main' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >Home</a>
           <a href='#about-me' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >About Me</a>
-          <a href='#highlights' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >Highlights</a>
           <a href='#applications' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >Applications</a>
+          <a href='#allRepos' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >All Repos</a>
         </div>
       )
     }
@@ -55,8 +55,8 @@ class Menu extends React.Component {
           <FaBars className='menu-bar-mobile' onClick={this.handleMobileMenuOnClick} />
           <a href='#main' className='menu-item'>Home</a>
           <a href='#about-me' className='menu-item'>About Me</a>
-          <a href='#highlights' className='menu-item'>Highlights</a>
           <a href='#applications' className='menu-item'>Applications</a>
+          <a href='#allRepos' className='menu-item'>All Repos</a>
         </div>
         {this.displayMobileMenu()}
         <div className='social-icon-container'>
