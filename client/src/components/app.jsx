@@ -5,22 +5,16 @@ import AboutMe from './aboutMe.jsx';
 import Highlights from './highlights.jsx';
 import Applications from './applications.jsx';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div>
-        <Menu />
-        <Main />
-        <AboutMe />
-        <Highlights />
-        <Applications />
-      </div>
-    )
-  }
+const App = (props) => {
+  return (
+    <div>
+      <Menu />
+      <Main />
+      <AboutMe />
+      <Highlights />
+      <Applications />
+    </div>
+  )
 }
 
 export default App;
