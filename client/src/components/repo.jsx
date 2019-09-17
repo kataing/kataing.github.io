@@ -5,11 +5,19 @@ const Repo = (props) => {
     <span className='repo-container-large'>
       <span className='repo-container-small'>
         <div className='section-subtitle'>
-          {props.repo.full_name}
+          {props.repo.name}
         </div>
-        <a className='repo-link' href='https://github.com/feat-backendcountry/component-kristina'>
-          View Repo
+        <a href={props.repo.html_url}>
+          <img className='repo-folder' src='images/repo-folder.png' alt='repo-folder' />
         </a>
+        <div className='repo-description-container'>
+          <a className='repo-link' href={props.repo.html_url}>
+            View Repo
+          </a>
+          <div className='repo-description'>
+            {props.repo.description}
+          </div>
+        </div>
       </span>
     </span>
   )
