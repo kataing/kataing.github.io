@@ -161,5 +161,17 @@
   .diagram-header {
     padding-left: 20px;
   }
+
+  /*
+    -------------------
+    Application Specific
+    -------------------
+  */
+
+  .repo-container {
+    display: block;
+    align-content: center;
+  }
+
 }
 
