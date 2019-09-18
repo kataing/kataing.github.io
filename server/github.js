@@ -1,16 +1,19 @@
 const request = require('request');
-const { TOKEN } = require('../config.js');
-const { username } = require('../config.js');
+// Uncomment these lines when testing locally
+// const { TOKEN } = require('../config.js');
+// const { username } = require('../config.js');
 
 let KEY = process.env.KEY;
-if (KEY == null || KEY == "") {
-  KEY = TOKEN;
-}
+// Uncomment these lines when testing locally
+// if (KEY == null || KEY == "") {
+//   KEY = TOKEN;
+// }
 
 let login = process.env.login;
-if (login == null || login == "") {
-  login = username;
-}
+// Uncomment these lines when testing locally
+// if (login == null || login == "") {
+//   login = username;
+// }
 
 let getReposByUsername = (cb) => {
   let options = {
