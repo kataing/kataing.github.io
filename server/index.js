@@ -4,7 +4,11 @@ const parser = require('body-parser');
 const github = require('./github.js');
 
 const app = express();
-const port = 3000;
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
 
 app.use(parser.json());
 app.use(parser.urlencoded({ extended: true }));
