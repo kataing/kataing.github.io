@@ -27,10 +27,13 @@ class Main extends React.Component {
   render() {
     return (
       <section id='main' className='main'>
-        <div className='image-container'>
+        <div className='image-container-desktop'>
           <img className='portfolio-image' src='images/portfolio-image.jpg' alt='portfolio-image' />
         </div>
         <div className='main-container'>
+          <div className='image-container-mobile'>
+            <img className='portfolio-image' src='images/portfolio-image.jpg' alt='portfolio-image' />
+          </div>
           <div className='typewriter-container'>
             <span className='intro-text'>
               {this.state.fullText.slice(0, this.state.displayLength)}

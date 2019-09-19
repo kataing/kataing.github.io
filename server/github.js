@@ -10,7 +10,7 @@ let KEY = process.env.KEY;
 // }
 
 let login = process.env.login;
-// Uncomment these lines when testing locally
+// // Uncomment these lines when testing locally
 // if (login == null || login == "") {
 //   login = username;
 // }
