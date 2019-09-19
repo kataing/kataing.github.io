@@ -1,6 +1,6 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
-import { FaBars, FaTintSlash } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 
 class Menu extends React.Component {
   constructor(props) {
@@ -36,8 +36,14 @@ class Menu extends React.Component {
       var currentScrollPos = window.pageYOffset;
       if (prevScrollpos > currentScrollPos) {
         document.getElementById('menu').style.top = '0';
+        this.setState({
+          displayMobileMenu: false
+        })
       } else {
         document.getElementById('menu').style.top = '-61px';
+        this.setState({
+          displayMobileMenu: false
+        })
       }
       prevScrollpos = currentScrollPos;
     }
