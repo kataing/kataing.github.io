@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = (props) => {
   return (
-    <section className='section footer'>
-      Designed and developed by Kristina Taing © 2019
+    <section className='footer'>
+        Designed and developed by Kristina Taing © 2019
     </section>
   )
 }

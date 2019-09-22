@@ -9,7 +9,7 @@ class AllRepos extends React.Component {
     this.state = {
       allRepos: [],
       repos: [],
-      length: 8
+      length: 4
     }
   }
 
@@ -17,11 +17,11 @@ class AllRepos extends React.Component {
     var newLength = this.state.length;
     if(e.target.className === 'repo-button show-more') {
       if (newLength < this.state.allRepos.length) {
-        newLength += 8;
+        newLength += 4;
       }
     } else if (e.target.className === 'repo-button show-less') {
-      if (newLength > 8) {
-        newLength -= 8;
+      if (newLength > 4) {
+        newLength -= 4;
       }
     }
     this.setState({
