@@ -20,12 +20,12 @@ class Menu extends React.Component {
   displayMobileMenu = () => {
     if (this.state.displayMobileMenu) {
       return (
-        <div className='menu-item-container-mobile'>
-          <a href='#main' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >Home</a>
-          <a href='#about-me' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >About Me</a>
-          <a href='#applications' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >Applications</a>
-          <a href='#allRepos' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >All Repos</a>
-        </div>
+          <div className='menu-item-container-mobile'>
+            <a href='#main' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >Home</a>
+            <a href='#about-me' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >About Me</a>
+            <a href='#applications' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >Applications</a>
+            <a href='#allRepos' className='menu-item-mobile' onClick={this.handleMobileMenuOnClick} >Repos</a>
+          </div>
       )
     }
   }
@@ -53,7 +53,6 @@ class Menu extends React.Component {
     this.handleScroll();
   }
 
-
   render() {
     return (
       <section id='menu' className='menu'>
@@ -62,7 +61,7 @@ class Menu extends React.Component {
           <a href='#main' className='menu-item'>Home</a>
           <a href='#about-me' className='menu-item'>About Me</a>
           <a href='#applications' className='menu-item'>Applications</a>
-          <a href='#allRepos' className='menu-item'>All Repos</a>
+          <a href='#allRepos' className='menu-item'>Repos</a>
         </div>
         {this.displayMobileMenu()}
         <div className='social-icon-container'>
