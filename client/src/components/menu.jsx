@@ -30,6 +30,14 @@ class Menu extends React.Component {
     }
   }
 
+  displayMobileDim = () => {
+    if (this.state.displayMobileMenu) {
+      return (
+          <div className='dim-screen' onClick={this.handleMobileMenuOnClick}></div>
+      )
+    }
+  }
+
   handleScroll = () => {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = () => {
@@ -55,21 +63,24 @@ class Menu extends React.Component {
 
   render() {
     return (
-      <section id='menu' className='menu'>
-        <div className='menu-item-container'>
-          <FaBars className='menu-bar-mobile' onClick={this.handleMobileMenuOnClick} />
-          <a href='#main' className='menu-item'>Home</a>
-          <a href='#about-me' className='menu-item'>About Me</a>
-          <a href='#applications' className='menu-item'>Applications</a>
-          <a href='#allRepos' className='menu-item'>Repos</a>
+      <section id='menu'>
+        <div className='menu'>
+          <div className='menu-item-container'>
+            <FaBars className='menu-bar-mobile' onClick={this.handleMobileMenuOnClick} />
+            <a href='#main' className='menu-item'>Home</a>
+            <a href='#about-me' className='menu-item'>About Me</a>
+            <a href='#applications' className='menu-item'>Applications</a>
+            <a href='#allRepos' className='menu-item'>Repos</a>
+          </div>
+          {this.displayMobileMenu()}
+          <div className='social-icon-container'>
+            <SocialIcon className='social-icon' bgColor='#333' url='http://linkedin.com/in/kristinataing' />
+            <SocialIcon className='social-icon' bgColor='#333' url='http://github.com/kataing' />
+            <SocialIcon className='social-icon' bgColor='#333' url='https://www.youtube.com/channel/UCVrbpYT1htiM5ZS2MKPyQqQ' />
+            <SocialIcon className='social-icon' bgColor='#333' url='mailto:ktaingdev@gmail.com' />
+          </div>
         </div>
-        {this.displayMobileMenu()}
-        <div className='social-icon-container'>
-          <SocialIcon className='social-icon' bgColor='#333' url='http://linkedin.com/in/kristinataing' />
-          <SocialIcon className='social-icon' bgColor='#333' url='http://github.com/kataing' />
-          <SocialIcon className='social-icon' bgColor='#333' url='https://www.youtube.com/channel/UCVrbpYT1htiM5ZS2MKPyQqQ' />
-          <SocialIcon className='social-icon' bgColor='#333' url='mailto:ktaingdev@gmail.com' />
-        </div>
+        {this.displayMobileDim()}
       </section>
     )
   }

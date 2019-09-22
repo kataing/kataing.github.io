@@ -85,14 +85,15 @@ a {
   margin: 5px;
 }
 
-/* .dim-screen {
+.dim-screen {
   display: float;
+  position: fixed;
   height: 100vh;
   width: 100vw;
-  opacity: 0.2;
+  opacity: 0.3;
   z-index: 1; 
-  background-color: #999;
-} */
+  background-color: #888;
+}
 
 /*
   -------------------
