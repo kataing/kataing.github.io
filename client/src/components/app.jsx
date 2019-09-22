@@ -4,6 +4,7 @@ import Menu from './menu.jsx';
 import AboutMe from './aboutMe.jsx';
 import Applications from './applications.jsx';
 import AllRepos from './allRepos.jsx';
+import Footer from './footer.jsx';
 
 const App = (props) => {
   return (
@@ -13,6 +14,7 @@ const App = (props) => {
       <AboutMe />
       <Applications />
       <AllRepos />
+      <Footer />
     </div>
   )
 }

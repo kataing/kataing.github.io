@@ -427,3 +427,20 @@ a {
   color: #fff;
   background-color: #252929;
 }
+
+/*
+  -------------------
+  Footer Specific
+  -------------------
+*/
+
+.footer {
+  display: block;
+  width: 100vw;
+  height: 3vh;
+  text-align: center;
+  font-size: 15px;
+  background-color: #252929;
+  color: #fff;
+  border: solid #adc4cb 2px;
+}
