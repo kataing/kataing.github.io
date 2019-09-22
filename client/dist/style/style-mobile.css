@@ -2,6 +2,10 @@ body {
   font-family: 'Source Code Pro', monospace;
 }
 
+button:focus {
+  outline:0;
+}
+
 .iframe-container {
   overflow: hidden;
   padding-top: 56.25%;
@@ -36,7 +40,7 @@ a {
   justify-content: space-between;
   border-bottom: 1px solid rgb(127,127,127);
   background-color: #e0ffff;
-  z-index: 1;
+  z-index: 2;
   transition: top 0.3s;
 }
 
@@ -81,6 +85,14 @@ a {
   margin: 5px;
 }
 
+/* .dim-screen {
+  display: float;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.2;
+  z-index: 1; 
+  background-color: #999;
+} */
 
 /*
   -------------------
@@ -391,4 +403,27 @@ a {
 
 .repo-description {
   text-align: left;
+}
+
+.repo-button-container {
+  display: block;
+}
+
+.repo-button {
+  display: inline-block;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 15px;
+  background-color: #adc4cb;
+  margin: 15px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.repo-button:hover {
+  text-decoration: underline;
+  border: 1px solid #999;
+  color: #fff;
+  background-color: #252929;
 }
