@@ -1,11 +1,5 @@
 import React from 'react';
 
-import { IoLogoJavascript } from 'react-icons/io';
-import { IoLogoCss3 } from 'react-icons/io';
-import { IoLogoHtml5 } from 'react-icons/io';
-import { FaReact } from 'react-icons/fa';
-import { IoLogoGithub } from 'react-icons/io';
-
 const AboutMe = (props) => {
   return (
     <section id='about-me' className='section'>
@@ -13,14 +7,14 @@ const AboutMe = (props) => {
         <span className='section-separator'></span>
         <div className='section-header'>
           About Me
-          </div>
+        </div>
         <span className='section-separator'></span>
       </h1>
       <section className='section-container-large'>
         <div className='section-container-small'>
           <h1 className='section-subtitle'>
             Kristina Taing: Software Engineer
-            </h1>
+          </h1>
           <div className='column-to-row-container'>
             <div className='iframe-container description-visual'>
               <iframe src="https://www.youtube.com/embed/7k3XS0FrShE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -28,11 +22,14 @@ const AboutMe = (props) => {
             <div className='section-description-short description-item'>
               <div className='description-container'>
                 <div className='skills-logo-container'>
-                  <IoLogoJavascript className='skills-logo' />
-                  <IoLogoHtml5 className='skills-logo' />
-                  <IoLogoCss3 className='skills-logo' />
-                  <FaReact className='skills-logo' />
-                  <IoLogoGithub className='skills-logo' />
+                  <img className='skills-logo' src='/images/javascript-icon.png' alt='javascript-icon' />
+                  <img className='skills-logo' src='/images/html-icon.png' alt='html-icon' />
+                  <img className='skills-logo' src='/images/css-icon.png' alt='css-icon' />
+                  <img className='skills-logo' src='/images/react-icon.png' alt='react-icon' />
+                  <img className='skills-logo' src='/images/postgresql-icon.png' alt='postgresql-icon' />
+                  <img className='skills-logo' src='/images/mysql-icon.png' alt='mysql-icon' />
+                  <img className='skills-logo' src='/images/mongodb-icon.png' alt='mongodb-icon' />
+                  <img className='skills-logo' src='/images/amazon-ec2-icon.png' alt='amzaon-ec2-icon' />
                 </div>
                 <div>
                   Hello! Thank you for taking the time to be here today. If you play the video, I'll explain why I'm a Software Engineer.
