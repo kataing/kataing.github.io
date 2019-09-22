@@ -15,7 +15,7 @@ const Applications = (props) => {
         <div className='section-container-small'>
           <h1 className='section-subtitle'>
             füdFeed: A Mobile Recipe App
-            </h1>
+          </h1>
           <div className='column-to-row-container'>
             <div className='section-description-short description-item'>
               <img className='app-logo' src='images/fudFeedLogo.png' alt='fudFeed logo' />
@@ -106,46 +106,38 @@ const Applications = (props) => {
       {/* Front-End Country Application */}
       <section className='section-container-large'>
         <div className='section-container-small'>
+          <h1 className='section-subtitle'>
+            Front-End Country: A Backcountry.com Replica
+          </h1>
           <div className='column-to-row-container'>
-            <div className='backcountry-item'>
-              <div className='section-subtitle'>
-                Front-End Country: A Backcountry.com Replica
-              </div>
-              <div className='iframe-container description-visual backcountry-video'>
-                <iframe src="https://www.youtube.com/embed/VBUTHrku_d4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-              </div>
+            <div className='iframe-container description-visual'>
+              <iframe src="https://www.youtube.com/embed/VBUTHrku_d4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
-            <a className='backcountry-item description-item' href='https://www.backcountry.com/fjallraven-vidda-pro-pant-mens?skid=FJR00EP-DAROV-USS37EUS54&ti=UExQIENhdDpNZW4ncyBQYW50czoxOjU6YmMtbWVucy1wYW50cw=='>
-              <div className='section-subtitle backcountry-text'>
-                Backcountry Website
-              </div>
-              <img className='backcountry-img' src='images/Backcountry.png' alt='Backcountry Website' />
-            </a>
+            <div className='section-description-short description-item'>
+              <p className='description-container'>
+                <a className='repo-link' href='https://github.com/feat-backendcountry/component-kristina'>
+                  View Repo
+                </a>
+                <span className='description-new-line skills'>
+                  | React | Express | AWS S3 | MongoDB | HTML5 | CSS3 |
+                  </span>
+                <span className='description-new-line'>
+                  Developed a front-end replica of the Backcountry website using a Service Oriented Architecture
+                </span>
+                <span className='bullet-point-container'>
+                  <span className='description-new-line'>
+                    • Specialized in the navigation-bar design and functionality, and hosted images and icons on AWS S3
+                  </span>
+                  <span className='description-new-line'>
+                    • Designed a MongoDB schema with additional nested schemas and seeded 100 sample product entries
+                  </span>
+                  <span className='description-new-line'>
+                    • Developed a request to return results from the database related to values typed into the search bar
+                  </span>
+                </span>
+              </p>
+            </div>
           </div>
-        </div>
-        <div className='section-description-long'>
-          <p className='description-container'>
-            <a className='repo-link' href='https://github.com/feat-backendcountry/component-kristina'>
-              View Repo
-            </a>
-            <span className='description-new-line  skills'>
-              | React | Express | AWS S3 | MongoDB | HTML5 | CSS3 |
-            </span>
-            <span className='description-new-line'>
-              Developed a front-end replica of the Backcountry website using a Service Oriented Architecture
-            </span>
-            <span className='bullet-point-container'>
-              <span className='description-new-line'>
-                • Specialized in the navigation-bar design and functionality, and hosted images and icons on AWS S3
-              </span>
-              <span className='description-new-line'>
-                • Designed a MongoDB schema with additional nested schemas and seeded 100 sample product entries
-              </span>
-              <span className='description-new-line'>
-                • Developed a request to return results from the database related to values typed into the search bar
-              </span>
-            </span>
-          </p>
         </div>
       </section>
     </section>

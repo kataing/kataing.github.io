@@ -304,22 +304,6 @@ a {
 
 /*
   -------------------
-  Backcountry Specific
-  -------------------
-*/
-
-.backcountry-text {
-  text-decoration: underline;
-}
-
-.backcountry-img {
-  align-self: auto;
-  width: 700px;
-  max-width: 100%;
-}
-
-/*
-  -------------------
   Arcteryx Specific
   -------------------
 */

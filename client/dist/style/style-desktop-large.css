@@ -52,21 +52,6 @@
   .app-logo {
     align-self: auto;
   }
-
-
-  /*
-    -------------------
-    Backcountry Specific
-    -------------------
-  */
-
-  .backcountry-img {
-    align-self: auto;
-  }
-
-  .backcountry-video {
-    max-width: 38vw;
-  }
   
   /*
     -------------------

@@ -137,29 +137,6 @@
 
   /*
     -------------------
-    Backcountry Specific
-    -------------------
-  */
-  
-  .backcountry-text {
-    text-decoration: none;
-  }
-
-  .backcountry-text:hover {
-    text-decoration: underline;
-  }
-  
-  .backcountry-item {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .backcountry-img {
-    align-self: center;
-  }
-
-  /*
-    -------------------
     Arcteryx Specific
     -------------------
   */
