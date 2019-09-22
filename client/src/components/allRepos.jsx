@@ -64,7 +64,7 @@ class AllRepos extends React.Component {
           })}
         </div>
         <div className='repo-button-container'>
-          {this.state.length > 8 && <button className='repo-button show-less' onClick={this.handleOnClick}>Show less repos</button>}
+          {this.state.length > 4 && <button className='repo-button show-less' onClick={this.handleOnClick}>Show less repos</button>}
           {this.state.length < this.state.allRepos.length && <button className='repo-button show-more' onClick={this.handleOnClick}>Show more repos</button>}
         </div>
       </section>
