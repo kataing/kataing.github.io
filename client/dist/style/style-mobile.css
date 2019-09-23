@@ -297,6 +297,7 @@ a {
 
 .skills-logo-container {
   display: block;
+  overflow: hidden;
 }
 
 .skills-logo {
