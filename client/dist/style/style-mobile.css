@@ -298,6 +298,7 @@ a {
 .skills-logo-container {
   display: block;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .skills-logo {
