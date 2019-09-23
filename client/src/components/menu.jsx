@@ -64,8 +64,8 @@ class Menu extends React.Component {
 
   render() {
     return (
-      <section id='menu'>
-        <div className='menu'>
+      <section>
+        <div id='menu' className='menu'>
           <div className='menu-item-container'>
             <FaBars className='menu-bar-mobile' onClick={this.handleMobileMenuOnClick} />
             <a href='#main' className='menu-item'>Home</a>
