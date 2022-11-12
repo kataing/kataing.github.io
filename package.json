@@ -35,7 +35,7 @@
     "react-social-icons": "^4.1.0",
     "request": "^2.88.0",
     "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7"
+    "webpack-cli": "^3.3.12"
   },
   "devDependencies": {}
 }
